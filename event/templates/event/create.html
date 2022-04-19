@@ -1,0 +1,12 @@
+{% extends 'event/base.html' %}
+{% block content %}
+
+<form action="/createevent/" method="post">{% csrf_token %}
+  <input type="text" name="title"/> </br>
+  <input type="text" name="subtitle"/> </br>
+  <input type="text" name="content"/> </br>
+  <input type="submit" value="Add"/>
+</form>
+
+
+{% endblock %}
